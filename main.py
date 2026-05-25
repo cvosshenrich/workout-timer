@@ -36,7 +36,7 @@ class WorkoutTimer:
             self.halfway_checkbox = ui.checkbox('Signal bei der Hälfte der Zeit').bind_value(self, 'halfway_signal')
 
             # Timer Buttons
-            with ui.row().classes('gap-4 mt-4'):
+            with ui.column().classes('gap-4 mt-4'):
                 for t in config['timers']:
                     ui.button(t['label'], on_click=lambda t=t: self.start_timer(t['duration'])).classes('px-6 py-2')
 
