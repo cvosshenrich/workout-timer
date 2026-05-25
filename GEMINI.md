@@ -37,6 +37,25 @@ python main.py
 ```
 Die App ist standardmäßig unter `http://localhost:8080` erreichbar.
 
+## Docker-Betrieb
+Das Projekt enthält ein `Dockerfile` und eine `docker-compose.yml` für den Betrieb im Container.
+
+### Mit Docker Compose (Empfohlen)
+```bash
+docker compose up -d --build
+```
+Dies startet die App im Hintergrund. Die `config.json` wird als Volume eingebunden, sodass Änderungen an der Datei ohne Image-Rebuild übernommen werden können (nach einem Neustart des Containers).
+
+### Mit reinem Docker
+1. Image bauen:
+   ```bash
+   docker build -t workout-timer .
+   ```
+2. Container starten:
+   ```bash
+   docker run -p 8080:8080 workout-timer
+   ```
+
 ## Entwicklungskonventionen
 - **UI-Struktur**: Die UI ist in der Klasse `WorkoutTimer` gekapselt, um den Zustand (verbleibende Zeit, Signal-Status) sauber zu verwalten.
 - **Akustische Signale**: Signale werden über `ui.run_javascript` ausgelöst, um eine niedrige Latenz und Kompatibilität ohne externe Audio-Dateien zu gewährleisten.

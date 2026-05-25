@@ -99,4 +99,4 @@ class WorkoutTimer:
 def main():
     WorkoutTimer()
 
-ui.run(title='Gymnastik Workout Timer', native=False)
+ui.run(title='Gymnastik Workout Timer', native=False, host='0.0.0.0')
