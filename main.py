@@ -38,10 +38,10 @@ class WorkoutTimer:
             # Timer Buttons
             with ui.column().classes('gap-4 mt-4'):
                 for t in config['timers']:
-                    ui.button(t['label'], on_click=lambda t=t: self.start_timer(t['duration'])).classes('px-6 py-2')
+                    ui.button(t['label'], on_click=lambda t=t: self.start_timer(t['duration'])).classes('w-32 py-2')
 
             # Reset Button
-            ui.button('Reset', on_click=self.reset, color='red').classes('mt-4')
+            ui.button('Reset', on_click=self.reset, color='red').classes('w-32 mt-4')
 
     def play_sound(self):
         # Einfacher Piepton über Web Audio API
