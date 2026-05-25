@@ -4,6 +4,4 @@ services:
     container_name: workout-timer
     ports:
       - "9081:8080"
-    volumes:
-      - ./config.json:/app/config.json
     restart: unless-stopped

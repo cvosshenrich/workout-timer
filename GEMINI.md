@@ -44,7 +44,7 @@ Das Projekt enthält ein `Dockerfile` und eine `docker-compose.yml` für den Bet
 ```bash
 docker compose up -d --build
 ```
-Dies startet die App im Hintergrund. Die `config.json` wird als Volume eingebunden, sodass Änderungen an der Datei ohne Image-Rebuild übernommen werden können (nach einem Neustart des Containers).
+Dies startet die App im Hintergrund. Da die `config.json` direkt in das Image kopiert wird, müssen Änderungen an der Konfiguration mit einem Rebuild des Images (`--build`) übernommen werden.
 
 ### Mit reinem Docker
 1. Image bauen:
