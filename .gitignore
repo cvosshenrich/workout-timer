@@ -204,3 +204,6 @@ terraform.rc
 # ...
 kubeconfig
 
+.antigravitycli
+
+
