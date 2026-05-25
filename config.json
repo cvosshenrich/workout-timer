@@ -1,7 +1,7 @@
 {
     "timers": [
-        {"label": "Kurz (30s)", "duration": 30},
-        {"label": "Mittel (60s)", "duration": 60},
-        {"label": "Lang (120s)", "duration": 120}
+        {"label": "Kurz (40s)", "duration": 40},
+        {"label": "Mittel (45s)", "duration": 45},
+        {"label": "Lang (60s)", "duration": 60}
     ]
 }

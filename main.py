@@ -9,9 +9,9 @@ def load_config():
     except FileNotFoundError:
         return {
             "timers": [
-                {"label": "30s", "duration": 30},
-                {"label": "60s", "duration": 60},
-                {"label": "120s", "duration": 120}
+                {"label": "40s", "duration": 40},
+                {"label": "45s", "duration": 45},
+                {"label": "60s", "duration": 60}
             ]
         }
 
