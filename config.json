@@ -1,0 +1,7 @@
+{
+    "timers": [
+        {"label": "Kurz (30s)", "duration": 30},
+        {"label": "Mittel (60s)", "duration": 60},
+        {"label": "Lang (120s)", "duration": 120}
+    ]
+}
