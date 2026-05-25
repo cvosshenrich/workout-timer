@@ -35,7 +35,7 @@ Die App ermöglicht es Benutzern, vordefinierte Timer-Intervalle zu starten, die
 ```bash
 python main.py
 ```
-Die App ist standardmäßig unter `http://localhost:8080` erreichbar.
+Die App ist standardmäßig unter `http://localhost:8080` erreichbar (bei direktem Start) bzw. unter `http://localhost:9081` (beim Betrieb im Docker-Container).
 
 ## Docker-Betrieb
 Das Projekt enthält ein `Dockerfile` und eine `docker-compose.yml` für den Betrieb im Container.
@@ -53,7 +53,7 @@ Dies startet die App im Hintergrund. Die `config.json` wird als Volume eingebund
    ```
 2. Container starten:
    ```bash
-   docker run -p 8080:8080 workout-timer
+   docker run -p 9081:8080 workout-timer
    ```
 
 ## Entwicklungskonventionen
